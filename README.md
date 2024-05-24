@@ -6,23 +6,31 @@ Description:
 The GitHub Access Auditor is a comprehensive solution designed to automate the process of auditing user access permissions for GitHub repositories within an organization. This project leverages shell scripting, AWS EC2 instances, and secure access methods to provide a robust tool for managing and auditing repository access.
 
 Key Features:
+
 Shell Script Automation: A shell script automates the retrieval and display of user access details for a specified GitHub repository.
 AWS EC2 Integration: Utilizes an AWS EC2 instance to run the script, ensuring scalability and efficiency.
+
 Secure Access with PEM Files: Connects to the EC2 instance securely using MobaXterm and a PEM file, ensuring that private keys remain protected and accessible only by authorized users.
 GitHub Integration: Clones the target repository from GitHub using the git clone command to access and execute the script.
+
 Permission Management: Adjusts file permissions using chmod to ensure the script executes without issues.
 User Access Audit: Executes the script to identify and list all users who have read access to the specified GitHub repository, providing detailed information about their permissions.
+
 Usage Scenario:
+
 This project is ideal for organizations that need to regularly audit and manage access permissions to their GitHub repositories. By automating the process, the GitHub Access Auditor helps maintain security compliance and ensures that only authorized personnel have access to sensitive code and data.
 
 Setup Instructions:
+
 Upload Script to GitHub: Begin by uploading your shell script to a GitHub repository.
 Create an EC2 Instance: Set up an AWS EC2 instance to run the script.
 Connect to EC2: Use MobaXterm and your PEM file to securely connect to the EC2 instance.
 Clone Repository: Clone the GitHub repository containing your script using the git clone command.
 Set Permissions: Use chmod 777 to grant execution permissions to the script.
 Run the Script: Execute the script with the repository owner and name as arguments to audit user access.
+
 Detailed Steps:
+
 Upload the Script:
 
 Save the script as list_users_with_read_access.sh and push it to your GitHub repository.
