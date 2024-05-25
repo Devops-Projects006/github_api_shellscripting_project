@@ -16,7 +16,7 @@ echo "Enter the Second number"
 read num2
 
 sum=$((num1 + num2))
-#echo "sum of $num1 and $num2 is:$sum"
+mul=$((num1 * num2))
 echo "The sum of $num1 and $num2  is: $sum"
-
+echo "The multiplication of $num1 and $num2 is: $mul"
 
